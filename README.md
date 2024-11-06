@@ -51,7 +51,7 @@ Numerical Experiments in nine public challenge datasets show that our method can
 
 ## Training and Supervision
 
-
+* The synthetic event-based TartanAir data is generated using the [ESIM](https://github.com/KwanWaiPang/ESIM_comment) simulator. Following [Note1](https://github.com/KwanWaiPang/ESIM_comment/blob/main/rosbag_reading/generate_sim_event.ipynb) and [Note2](https://github.com/KwanWaiPang/ESIM_comment/blob/main/rosbag_reading/upsampled_generate_sim_event.ipynb) to quickly use.
 
 ## Evaluating DEIO
 
@@ -267,10 +267,10 @@ CUDA_VISIBLE_DEVICES=2 PYTHONPATH=${YOUR_WORKSPACE} python script/pp_data/pp_ecm
 <p>Estimated trajectories against the GT in ECMD</p>
 </div>
 
-## Using Our Methods as Comparison
+## Using Our Results as Comparison
 <div align="justify">
 For the convenience of the comparison, we release the estimated trajectories of DEIO in <code>tum</code> format in the dir of <code>Estimated_Trajectories</code>.
-What's more, we also give the <a href="../Estimated_Trajectories/evo_evaluation_trajectory.ipynb">sample code</a> for the quantitative and qualitative evaluation using <a href="https://github.com/MichaelGrupp/evo">evo package</a>
+What's more, we also give the <a href="./Estimated_Trajectories/evo_evaluation_trajectory.ipynb">sample code</a> for the quantitative and qualitative evaluation using <a href="https://github.com/MichaelGrupp/evo">evo package</a>
 </div>
 <!-- [sample code](../Estimated_Trajectories/evo_evaluation_trajectory.ipynb) -->
 
