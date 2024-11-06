@@ -1,4 +1,5 @@
 
+<!-- # [Website](https://kwanwaipang.github.io/DEIO) -->
 [comment]: <> (# DEIO)
 
 <!-- PROJECT LOGO -->
@@ -10,14 +11,19 @@
 
 [comment]: <> (  <h2 align="center">PAPER</h2>)
   <h3 align="center">
-  <a href="">Paper</a> 
-  | <a href="">Website</a> 
-  | <a href="">Youtube</a> 
-  | <a href="">Bilibili</a> 
+  <a href="****">Paper</a> 
+  | <a href="https://kwanwaipang.github.io/DEIO">Website</a> 
+  | <a href="****">Youtube</a> 
+  | <a href="****">Bilibili</a> 
   </h3>
-  <div align="center"></div>
+  
+  <!-- <div align="center"></div> -->
 
-  <br>
+<div align="center">
+  <img src="./Figs/cover_figure.png" width="90%" />
+</div>
+
+  <!-- <br> -->
 
 ## Abstract
 <!-- <p style="text-align: justify;">  -->
@@ -44,6 +50,8 @@ Numerical Experiments in nine public challenge datasets show that our method can
 
 
 ## Training and Supervision
+
+
 
 ## Evaluating DEIO
 
@@ -144,7 +152,7 @@ CUDA_VISIBLE_DEVICES=0 PYTHONPATH=${YOUR_WORKSPACE} python script/eval_eio/deio_
 </div>
 
 ### 5. TUM-VIE <sup>[5](https://cvg.cit.tum.de/data/datasets/visual-inertial-event-dataset)</sup>
-Download sample sequence from [dsec_zurich_city_04_a, dsec_zurich_city_04_e]() (ASL format)
+Download sample sequence from [mocap-6dof, mocap-desk2]() (ASL format)
 
 Run the DEIO as the following steps:
 ~~~
@@ -190,6 +198,28 @@ CUDA_VISIBLE_DEVICES=0 PYTHONPATH=${YOUR_WORKSPACE} python script/eval_eio/deio_
 </div>
 
 ### 7. MVSEC <sup>[7](https://daniilidis-group.github.io/mvsec/)</sup>
+
+Download sample sequence from [indoor_flying_1, indoor_flying_3]() (ASL format)
+
+Run the DEIO as the following steps:
+~~~
+conda activate deio
+
+CUDA_VISIBLE_DEVICES=0 PYTHONPATH=${YOUR_WORKSPACE} python script/eval_eio/deio_mvsec.py \
+--datapath=${YOUR_DATAFOLDER}  \
+--weights=eDBA.pth \
+--visual_only=0 \
+--evaluate_flag \
+--enable_event \
+--SCORER_EVAL_USE_GRID \
+~~~
+
+<br>
+<div align="center">
+<img src="./Figs/indoor_flying_1.png" width="46.5%" />
+<img src="./Figs/indoor_flying_3.png" width="46%" />
+<p>Estimated trajectories against the GT in MVSEC Dataset</p>
+</div>
 
 
 ### 8. DSEC <sup>[8](https://dsec.ifi.uzh.ch/)</sup>
