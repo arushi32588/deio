@@ -11,10 +11,10 @@
 
 [comment]: <> (  <h2 align="center">PAPER</h2>)
   <h3 align="center">
-  <a href="****">Paper</a> 
+  <a href="">Paper</a> 
   | <a href="https://kwanwaipang.github.io/DEIO">Website</a> 
-  | <a href="****">Youtube</a> 
-  | <a href="****">Bilibili</a> 
+  | <a href="">Youtube</a> 
+  | <a href="">Bilibili</a> 
   </h3>
   
   <!-- <div align="center"></div> -->
@@ -267,9 +267,16 @@ CUDA_VISIBLE_DEVICES=2 PYTHONPATH=${YOUR_WORKSPACE} python script/pp_data/pp_ecm
 <p>Estimated trajectories against the GT in ECMD</p>
 </div>
 
+## Using Our Methods as Comparison
+<div align="justify">
+For the convenience of the comparison, we release the estimated trajectories of DEIO in <code>tum</code> format in the dir of <code>Estimated_Trajectories</code>.
+What's more, we also give the <a href="../Estimated_Trajectories/evo_evaluation_trajectory.ipynb">sample code</a> for the quantitative and qualitative evaluation using <a href="https://github.com/MichaelGrupp/evo">evo package</a>
+</div>
+<!-- [sample code](../Estimated_Trajectories/evo_evaluation_trajectory.ipynb) -->
+
 
 ## Acknowledgement
-* This work is based on [DPVO](https://github.com/princeton-vl/DPVO) and [DEVO](https://github.com/tum-vision/DEVO), while the GTSAM Lib is based on [DBA-Fusion](https://github.com/GREAT-WHU/DBA-Fusion)
+* This work is based on [DPVO](https://github.com/princeton-vl/DPVO), [DEVO](https://github.com/tum-vision/DEVO), [DROID-SLAM](https://github.com/princeton-vl/DROID-SLAM), and [DBA-Fusion](https://github.com/GREAT-WHU/DBA-Fusion)
 * More details about the trainable event representation is available in []()
 * If you find this work is helpful in your research, a simple star or citation of our works should be the best affirmation for us. :blush: 
 
