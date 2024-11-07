@@ -11,7 +11,7 @@
 
 [comment]: <> (  <h2 align="center">PAPER</h2>)
   <h3 align="center">
-  <a href="">Paper</a> 
+  <a href="https://arxiv.org/abs/2411.03928">Paper</a> 
   | <a href="https://kwanwaipang.github.io/DEIO">Website</a> 
   | <a href="">Youtube</a> 
   | <a href="">Bilibili</a> 
@@ -40,8 +40,8 @@ Numerical Experiments in nine public challenge datasets show that our method can
 
 ## Update log
 - [x] README Upload (2024/10/28)
+- [x] Paper Upload (2024/11/06)
 - [x] Estimated Trajectories Upload (2024/11/07)
-- [ ] Paper Upload
 - [ ] Evaluated Data Upload
 - [ ] Training Data Upload
 - [ ] Code Upload (will be released once the paper is accepted)
