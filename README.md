@@ -265,7 +265,7 @@ CUDA_VISIBLE_DEVICES=2 PYTHONPATH=${YOUR_WORKSPACE} python script/pp_data/pp_ecm
 <br>
 <div align="center">
 <img src="./Figs/ecmd_result.png" width="93%" />
-<p>Estimated trajectories against the GT in ECMD</p>
+<p>Estimated trajectories of our DEIO against the GNSS-INS-RTK in ECMD</p>
 </div>
 
 ## Using Our Results as Comparison
