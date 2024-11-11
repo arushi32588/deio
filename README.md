@@ -284,6 +284,9 @@ What's more, we also give the <a href="./estimated_trajectories/evo_evaluation_t
 
 ~~~
 @article{GWPHKU:DEIO,
-
+  title={DEIO: Deep Event Inertial Odometry},
+  author={Guan, Weipeng and Lin, Fuling and Chen, Peiyu and Lu, Peng},
+  journal={arXiv preprint arXiv:2411.03928},
+  year={2024}
 }
 ~~~
