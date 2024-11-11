@@ -281,7 +281,6 @@ What's more, we also give the <a href="./estimated_trajectories/evo_evaluation_t
 * More details about the trainable event representation is available in []()
 * If you find this work is helpful in your research, a simple star or citation of our works should be the best affirmation for us. :blush: 
 
-
 ~~~
 @article{GWPHKU:DEIO,
   title={DEIO: Deep Event Inertial Odometry},
