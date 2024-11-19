@@ -28,13 +28,13 @@
 ## Abstract
 <!-- <p style="text-align: justify;">  -->
 <div align="justify">
-Event cameras are bio-inspired, motion-activated sensors that demonstrate impressive potential in handling challenging situations, such as motion blur and high-dynamic range.
-Despite their promise, existing event-based simultaneous localization and mapping (SLAM) approaches exhibit limited performance in real-world applications.
-On the other hand, state-of-the-art SLAM approaches that incorporate deep neural networks for better robustness and applicability.
-However, these is a lack of research in fusing learning-based event SLAM methods with IMU, which could be indispensable to push the event-based SLAM to large-scale, low-texture or complex scenarios. 
-In this paper, we propose DEIO, the first monocular deep event-inertial odometry framework that combines learning-based method with traditional nonlinear graph-based optimization. 
-Specifically, we tightly integrate a trainable event-based differentiable bundle adjustment (e-DBA) with the IMU pre-integration in a factor graph which employs keyframe-based sliding window optimization.
-Numerical Experiments in nine public challenge datasets show that our method can achieve superior performance compared with the image-based and event-based benchmarks. 
+Event cameras are bio-inspired, motion-activated sensors that demonstrate great potential in handling challenging situations, such as fast motion and high-dynamic range.
+Despite their promise, existing event-based simultaneous localization and mapping (SLAM) approaches still face limited performance in real-world applications.
+On the other hand, state-of-the-art SLAM approaches that incorporate deep neural networks show impressive robustness and applicability.
+However, there is a lack of research on fusing learning-based event SLAM methods with IMU, which could be indispensable to push the event-based SLAM to large-scale, low-texture or complex scenarios. 
+In this paper, we propose DEIO, the first monocular deep event-inertial odometry framework, which combines learning-based method with traditional nonlinear graph-based optimization. 
+Specifically, we tightly integrate a trainable event-based differentiable bundle adjustment (e-DBA) with the IMU pre-integration in a patch-based co-visibility factor graph that employs keyframe-based sliding window optimization.
+Numerical Experiments in ten public challenge datasets demonstrate that our method can achieve superior performance compared with the image-based and event-based benchmarks.  
 <!-- </p> -->
 </div>
 
@@ -244,6 +244,29 @@ CUDA_VISIBLE_DEVICES=0 PYTHONPATH=${YOUR_WORKSPACE} python script/eval_eio/deio_
 <img src="./Figs/dsec_zurich_city_04_a.png" width="34%" />
 <img src="./Figs/dsec_zurich_city_04_e.png" width="57.5%" />
 <p>Estimated trajectories against the GT in DSEC</p>
+</div>
+
+### 9. EDS <sup>[9](https://rpg.ifi.uzh.ch/eds.html)</sup>
+Download sample sequence from [00_peanuts_dark, 09_ziggy_flying_pieces]() (ASL format)
+
+Run the DEIO as the following steps:
+~~~
+conda activate deio
+
+CUDA_VISIBLE_DEVICES=0 PYTHONPATH=${YOUR_WORKSPACE} python script/eval_eio/deio_eds.py \
+--datapath=${YOUR_DATAFOLDER}  \
+--weights=eDBA.pth \
+--visual_only=0 \
+--evaluate_flag \
+--enable_event \
+--SCORER_EVAL_USE_GRID \
+~~~
+
+<br>
+<div align="center">
+<img src="./Figs/peanuts_dark.png" width="60%" />
+<img src="./Figs/ziggy_flying.png" width="29.2%" />
+<p>Estimated trajectories against the GT in EDS</p>
 </div>
 
 ## Run on Your Own Dataset
