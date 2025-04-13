@@ -13,8 +13,6 @@
   <h3 align="center">
   <a href="https://arxiv.org/abs/2411.03928">Paper</a> 
   | <a href="https://kwanwaipang.github.io/DEIO">Website</a> 
-  | <a href="">Youtube</a> 
-  | <a href="">Bilibili</a> 
   </h3>
   
   <!-- <div align="center"></div> -->
