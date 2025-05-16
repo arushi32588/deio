@@ -42,9 +42,7 @@ Numerical Experiments in ten public challenge datasets demonstrate that our meth
 - [x] Paper Upload (2024/11/06)
 - [x] Estimated Trajectories Upload (2024/11/07)
 - [ ] Evaluated Data Upload
-- [ ] Training Data Upload
 - [ ] Code Upload (will be released once the paper is accepted)
-- [ ] Trainable Event Representation
 
 ## Setup and Installation
 
