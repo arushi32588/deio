@@ -1,0 +1,16 @@
+__pycache__
+build
+*.egg-info
+checkpoints
+*.out
+*.o
+*.zip
+data
+
+models/*
+datasets/TartanAir.pickle
+datasets/TartanAir
+TartanAirResults
+ORBvoc.txt
+
+results/*
