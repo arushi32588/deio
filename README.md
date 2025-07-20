@@ -110,7 +110,15 @@ What's more, we also give the <a href="./estimated_trajectories/evo_evaluation_t
 </div>
 <!-- [sample code](../estimated_trajectories/evo_evaluation_trajectory.ipynb) -->
 
+* [DAVIS240c](./estimated_trajectories/evo_evaluation_davis240c.ipynb)
+* [Mono-HKU](./estimated_trajectories/evo_evaluation_monohku.ipynb)
+* [Stereo-HKU](./estimated_trajectories/evo_evaluation_stereohku.ipynb)
+* [UZH-PFV](./estimated_trajectories/evo_evaluation_fpv.ipynb)
 * [VECtor](./estimated_trajectories/evo_evaluation_vector.ipynb)
+* [MVSEC](./estimated_trajectories/evo_evaluation_mvsec.ipynb)
+* [EDS](./estimated_trajectories/evo_evaluation_eds.ipynb)
+* [TUM-VIE](./estimated_trajectories/evo_evaluation_tumvie.ipynb)
+* [DSEC](./estimated_trajectories/evo_evaluation_dsec.ipynb)
 
 
 ## Acknowledgement
