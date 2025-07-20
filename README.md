@@ -35,8 +35,8 @@ Event cameras show great potential for visual odometry (VO) in handling challeng
 - [x] README Upload (2024/10/28)
 - [x] Paper Upload (2024/11/06)
 - [x] Estimated Trajectories Upload (2024/11/07)
-- [x] Code Upload (2025/07/11)
-- [ ] More Raw Results of VECtor Dataset  
+- [x] Code Upload (2025/07/19)
+- [x] More Raw Results of VECtor Dataset (2025/07/20) 
 
 ## Setup and Installation
 
@@ -109,6 +109,8 @@ For the convenience of the comparison, we release the estimated trajectories of 
 What's more, we also give the <a href="./estimated_trajectories/evo_evaluation_trajectory.ipynb">sample code</a> for the quantitative and qualitative evaluation using <a href="https://github.com/MichaelGrupp/evo">evo package</a>
 </div>
 <!-- [sample code](../estimated_trajectories/evo_evaluation_trajectory.ipynb) -->
+
+* [VECtor](./estimated_trajectories/evo_evaluation_vector.ipynb)
 
 
 ## Acknowledgement
