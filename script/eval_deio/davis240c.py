@@ -23,7 +23,7 @@ from evo.tools import file_interface
 from devo.config import cfg # 这里的cfg是从devo.config中导入的
 # from dpvo.utils import Timer
 
-from utils.load_utils import load_gt_us,davis240c_evs_iterator, davis240c_evs_h5_iterator
+from utils.load_utils import load_gt_us,davis240c_evs_iterator, davis240c_evs_iterator
 from utils.eval_utils import log_results,compute_median_results,VO_run,EVO_run,EVO_run_GBA,run_DEIO2
 
 if __name__ == '__main__':
@@ -180,7 +180,7 @@ if __name__ == '__main__':
                 all_imu = all_imu[all_imu[:, 0].argsort()]
 
                 traj_est, tstamps, flowdata, avg_fps = run_DEIO2(datapath_val, cfg, args.network, viz=args.viz, 
-                                        iterator=davis240c_evs_h5_iterator(datapath_val, side=args.side, stride=args.stride, timing=False, H=180, W=240),
+                                        iterator=davis240c_evs_iterator(datapath_val, side=args.side, stride=args.stride, timing=False, H=180, W=240),
                                         _all_imu=all_imu,
                                         _all_gt=all_gt,
                                         _all_gt_keys=all_gt_keys,
@@ -190,7 +190,7 @@ if __name__ == '__main__':
                 # 报错
                 # raise NotImplementedError("No loop closure and no IMU, please check the config file")
                 traj_est, tstamps, flowdata, avg_fps = EVO_run(datapath_val, cfg, args.network, viz=args.viz, 
-                                        iterator=davis240c_evs_h5_iterator(datapath_val, side=args.side, stride=args.stride, timing=False, H=180, W=240),
+                                        iterator=davis240c_evs_iterator(datapath_val, side=args.side, stride=args.stride, timing=False, H=180, W=240),
                                         timing=args.timing, H=180, W=240, viz_flow=False)
 
             # do evaluation （进行验证）
