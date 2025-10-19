@@ -8,7 +8,7 @@ nvidia-smi
 # If not installed, download & install driver from NVIDIA site
 
 # Install CUDA Toolkit (matching your driver & PyTorch version)
-# e.g., https://developer.nvidia.com/cuda-downloads
+e.g., https://developer.nvidia.com/cuda-downloads
 
 
 # conda environment
