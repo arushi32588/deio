@@ -54,7 +54,7 @@ CUDA_VISIBLE_DEVICES=0 python script/eval_deio/davis240c.py \
 
 pip install evo
 
-# Compare your estimated trajectory against ground truth
+# comparing estimated trajectory against groundtruth
 evo_traj tum results/DAVIS240C/shapes-rotation/estimated_trajectory_1.txt \
              shapes_rotation/groundtruth.txt \
              -p --plot
